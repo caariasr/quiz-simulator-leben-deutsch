@@ -52,7 +52,7 @@ for i, question_data in enumerate(st.session_state['quiz_data']):
                 f"Select an answer for Question {i + 1}:",
                 question_data['options'],
                 index=0,
-                label_visibility=False,
+                label_visibility="hidden",
                 key=f"q{i}"
             )
             st.markdown("</div>", unsafe_allow_html=True)
