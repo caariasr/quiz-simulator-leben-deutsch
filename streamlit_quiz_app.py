@@ -40,22 +40,21 @@ for i, question_data in enumerate(st.session_state['quiz_data']):
         correct = question_data['correct_answer']
         for option in question_data['options']:
             if option == correct:
-                st.markdown(f"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ **{option}** (Correct)")
+                st.markdown(f"<div style='margin-left: 40px;'>✅ **{option}** (Correct)</div>", unsafe_allow_html=True)
             elif option == st.session_state['responses'][i]:
-                st.markdown(f"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❌ **{option}** (Your Answer)")
+                st.markdown(f"<div style='margin-left: 40px;'>❌ **{option}** (Your Answer)</div>", unsafe_allow_html=True)
             else:
-                st.markdown(f"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{option}")
+                st.markdown(f"<div style='margin-left: 40px;'>{option}</div>", unsafe_allow_html=True)
     else:
-        with st.container():
-            st.markdown("<div style='margin-left: 40px;'>", unsafe_allow_html=True)
-            st.session_state['responses'][i] = st.radio(
-                f"Select an answer for Question {i + 1}:",
-                question_data['options'],
-                index=0,
-                label_visibility="hidden",
-                key=f"q{i}"
-            )
-            st.markdown("</div>", unsafe_allow_html=True)
+        st.markdown("<div style='margin-left: 40px;'>", unsafe_allow_html=True)
+        st.session_state['responses'][i] = st.radio(
+            f"Select an answer for Question {i + 1}:",
+            question_data['options'],
+            index=0,
+            label_visibility="hidden",
+            key=f"q{i}"
+        )
+        st.markdown("</div>", unsafe_allow_html=True)
 
 # Finish button
 if st.button("Finish Test"):
