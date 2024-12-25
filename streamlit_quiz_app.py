@@ -28,6 +28,7 @@ data = load_data()
 if 'quiz_data' not in st.session_state:
     st.session_state['quiz_data'] = generate_quiz(data)
     st.session_state['responses'] = [None] * 33
+    st.session_state['show_results'] = False
 
 # Quiz instructions
 st.write("This quiz simulates 33 questions from the Einbürgerungstest. Answer the questions below and click 'Finish Test' to see your score. Refresh page to have a new random set of 33 questions")
@@ -35,7 +36,7 @@ st.write("This quiz simulates 33 questions from the Einbürgerungstest. Answer t
 # Display quiz questions
 for i, question_data in enumerate(st.session_state['quiz_data']):
     st.write(f"**Question {i + 1}:** {question_data['question']}")
-    if 'show_results' in st.session_state and st.session_state['show_results']:
+    if st.session_state['show_results']:
         correct = question_data['correct_answer']
         for option in question_data['options']:
             if option == correct:
@@ -57,7 +58,6 @@ if st.button("Finish Test"):
     if None in st.session_state['responses']:
         st.error("Please answer all questions before finishing the test.")
     else:
-        st.session_state['show_results'] = True
         correct_answers = 0
         for i, question_data in enumerate(st.session_state['quiz_data']):
             if st.session_state['responses'][i] == question_data['correct_answer']:
@@ -69,9 +69,13 @@ if st.button("Finish Test"):
         else:
             st.error("Unfortunately you didn't pass this simulation, keep practicing")
 
-        # Reset quiz state for new simulation
-        if st.button("Start a New Quiz"):
-            del st.session_state['quiz_data']
-            del st.session_state['responses']
-            del st.session_state['show_results']
-            st.experimental_rerun()
+# Show Answers button
+if st.button("Show Answers"):
+    st.session_state['show_results'] = True
+
+# Reset quiz state for new simulation
+if st.session_state['show_results'] and st.button("Start a New Quiz"):
+    del st.session_state['quiz_data']
+    del st.session_state['responses']
+    del st.session_state['show_results']
+    st.experimental_rerun()
