@@ -40,15 +40,15 @@ for i, question_data in enumerate(st.session_state['quiz_data']):
         correct = question_data['correct_answer']
         for option in question_data['options']:
             if option == correct:
-                st.write(f"✅ **{option}** (Correct)")
+                st.markdown(f"&nbsp;&nbsp;&nbsp;&nbsp;✅ **{option}** (Correct)")
             elif option == st.session_state['responses'][i]:
-                st.write(f"❌ **{option}** (Your Answer)")
+                st.markdown(f"&nbsp;&nbsp;&nbsp;&nbsp;❌ **{option}** (Your Answer)")
             else:
-                st.write(option)
+                st.markdown(f"&nbsp;&nbsp;&nbsp;&nbsp;{option}")
     else:
         st.session_state['responses'][i] = st.radio(
             f"Select an answer for Question {i + 1}:",
-            question_data['options'],
+            [f"   {opt}" for opt in question_data['options']],
             index=0,
             key=f"q{i}"
         )
@@ -60,7 +60,7 @@ if st.button("Finish Test"):
     else:
         correct_answers = 0
         for i, question_data in enumerate(st.session_state['quiz_data']):
-            if st.session_state['responses'][i] == question_data['correct_answer']:
+            if st.session_state['responses'][i].strip() == question_data['correct_answer']:
                 correct_answers += 1
         st.write(f"You scored {correct_answers} out of 33.")
 
