@@ -1,4 +1,4 @@
-"question_number","question","option","is_correct","image_link"
+"question_number","question","option","is_correct","has_image"
 1,"In Deutschland dürfen Menschen offen etwas gegen die Regierung sagen, weil …","hier Religionsfreiheit gilt.","No",
 1,"In Deutschland dürfen Menschen offen etwas gegen die Regierung sagen, weil …","die Menschen Steuern zahlen.","No",
 1,"In Deutschland dürfen Menschen offen etwas gegen die Regierung sagen, weil …","die Menschen das Wahlrecht haben.","No",
@@ -79,10 +79,10 @@
 20,"Eine Partei in Deutschland verfolgt das Ziel, eine Diktatur zu errichten. Sie ist dann …","rechtsstaatlich orientiert.","No",
 20,"Eine Partei in Deutschland verfolgt das Ziel, eine Diktatur zu errichten. Sie ist dann …","gesetzestreu.","No",
 20,"Eine Partei in Deutschland verfolgt das Ziel, eine Diktatur zu errichten. Sie ist dann …","verfassungswidrig.","Yes",
-21,"Welches ist das Wappen der Bundesrepublik Deutschland?","einköpfiger Adler auf einem (gelben) Schild.","Yes","https://drive.google.com/file/d/1pPA0tMTe1tQUq_qM71ByEWLrtnSD4ot2/view?usp=drive_link"
-21,"Welches ist das Wappen der Bundesrepublik Deutschland?","Zwei vereinigte Symbole.","No","https://drive.google.com/file/d/1pPA0tMTe1tQUq_qM71ByEWLrtnSD4ot2/view?usp=drive_link"
-21,"Welches ist das Wappen der Bundesrepublik Deutschland?","stilisiertes Tatzenkreuz.","No","https://drive.google.com/file/d/1pPA0tMTe1tQUq_qM71ByEWLrtnSD4ot2/view?usp=drive_link"
-21,"Welches ist das Wappen der Bundesrepublik Deutschland?","Ährenkranz mit Hammer und Zirkel","No","https://drive.google.com/file/d/1pPA0tMTe1tQUq_qM71ByEWLrtnSD4ot2/view?usp=drive_link"
+21,"Welches ist das Wappen der Bundesrepublik Deutschland?","einköpfiger Adler auf einem (gelben) Schild.","Yes","Yes"
+21,"Welches ist das Wappen der Bundesrepublik Deutschland?","Zwei vereinigte Symbole.","No","Yes"
+21,"Welches ist das Wappen der Bundesrepublik Deutschland?","stilisiertes Tatzenkreuz.","No","Yes"
+21,"Welches ist das Wappen der Bundesrepublik Deutschland?","Ährenkranz mit Hammer und Zirkel","No","Yes"
 22,"Was für eine Staatsform hat Deutschland?","Monarchie","No",
 22,"Was für eine Staatsform hat Deutschland?","Diktatur","No",
 22,"Was für eine Staatsform hat Deutschland?","Republik","Yes",
@@ -215,10 +215,10 @@
 54,"Was ist keine staatliche Gewalt in Deutschland?","Judikative","No",
 54,"Was ist keine staatliche Gewalt in Deutschland?","Exekutive","No",
 54,"Was ist keine staatliche Gewalt in Deutschland?","Direktive","Yes",
-55,"Was zeigt dieses Bild?","Gebäude mit zwei Türmen rechts und links der Fassade, und einer Glaskuppel auf dem Dach mittig","No",
-55,"Was zeigt dieses Bild?","den Bundestagssitz in Berlin","Yes",
-55,"Was zeigt dieses Bild?","das Bundesverfassungsgericht in Karlsruhe","No",
-55,"Was zeigt dieses Bild?","das Bundesratsgebäude in Berlin","No",
+55,"Was zeigt dieses Bild?","Gebäude mit zwei Türmen rechts und links der Fassade, und einer Glaskuppel auf dem Dach mittig","No","Yes"
+55,"Was zeigt dieses Bild?","den Bundestagssitz in Berlin","Yes","Yes"
+55,"Was zeigt dieses Bild?","das Bundesverfassungsgericht in Karlsruhe","No","Yes"
+55,"Was zeigt dieses Bild?","das Bundesratsgebäude in Berlin","No","Yes"
 56,"Welches Amt gehört in Deutschland zur Gemeindeverwaltung?","Pfarramt","No",
 56,"Welches Amt gehört in Deutschland zur Gemeindeverwaltung?","Ordnungsamt","Yes",
 56,"Welches Amt gehört in Deutschland zur Gemeindeverwaltung?","Finanzamt","No",
@@ -275,10 +275,10 @@
 69,"Die Bundesrepublik Deutschland hat einen dreistufigen Verwaltungsaufbau. Wie heißt die unterste politische Stufe?","Landräte","No",
 69,"Die Bundesrepublik Deutschland hat einen dreistufigen Verwaltungsaufbau. Wie heißt die unterste politische Stufe?","Gemeinden","Yes",
 69,"Die Bundesrepublik Deutschland hat einen dreistufigen Verwaltungsaufbau. Wie heißt die unterste politische Stufe?","Bezirksämter","No",
-70,"Der deutsche Bundespräsident Gustav Heinemann gibt Helmut Schmidt 1974 die Ernennungsurkunde zum deutschen Bundeskanzler. Was gehört zu den Aufgaben des deutschen Bundespräsidenten / der deutschen Bundespräsidentin?","Er / Sie führt die Regierungsgeschäfte.","No",
-70,"Der deutsche Bundespräsident Gustav Heinemann gibt Helmut Schmidt 1974 die Ernennungsurkunde zum deutschen Bundeskanzler. Was gehört zu den Aufgaben des deutschen Bundespräsidenten / der deutschen Bundespräsidentin?","Er / Sie kontrolliert die Regierungspartei.","No",
-70,"Der deutsche Bundespräsident Gustav Heinemann gibt Helmut Schmidt 1974 die Ernennungsurkunde zum deutschen Bundeskanzler. Was gehört zu den Aufgaben des deutschen Bundespräsidenten / der deutschen Bundespräsidentin?","Er / Sie wählt die Minister / Ministerinnen aus.","No",
-70,"Der deutsche Bundespräsident Gustav Heinemann gibt Helmut Schmidt 1974 die Ernennungsurkunde zum deutschen Bundeskanzler. Was gehört zu den Aufgaben des deutschen Bundespräsidenten / der deutschen Bundespräsidentin?","Er / Sie schlägt den Kanzler / die Kanzlerin zur Wahl vor.","Yes",
+70,"Der deutsche Bundespräsident Gustav Heinemann gibt Helmut Schmidt 1974 die Ernennungsurkunde zum deutschen Bundeskanzler. Was gehört zu den Aufgaben des deutschen Bundespräsidenten / der deutschen Bundespräsidentin?","Er / Sie führt die Regierungsgeschäfte.","No","Yes"
+70,"Der deutsche Bundespräsident Gustav Heinemann gibt Helmut Schmidt 1974 die Ernennungsurkunde zum deutschen Bundeskanzler. Was gehört zu den Aufgaben des deutschen Bundespräsidenten / der deutschen Bundespräsidentin?","Er / Sie kontrolliert die Regierungspartei.","No","Yes"
+70,"Der deutsche Bundespräsident Gustav Heinemann gibt Helmut Schmidt 1974 die Ernennungsurkunde zum deutschen Bundeskanzler. Was gehört zu den Aufgaben des deutschen Bundespräsidenten / der deutschen Bundespräsidentin?","Er / Sie wählt die Minister / Ministerinnen aus.","No","Yes"
+70,"Der deutsche Bundespräsident Gustav Heinemann gibt Helmut Schmidt 1974 die Ernennungsurkunde zum deutschen Bundeskanzler. Was gehört zu den Aufgaben des deutschen Bundespräsidenten / der deutschen Bundespräsidentin?","Er / Sie schlägt den Kanzler / die Kanzlerin zur Wahl vor.","Yes","Yes"
 71,"Wo hält sich der deutsche Bundeskanzler / die deutsche Bundeskanzlerin am häufigsten auf? Am häufigsten ist er / sie …","in Bonn, weil sich dort das Bundeskanzleramt und der Bundestag befinden.","No",
 71,"Wo hält sich der deutsche Bundeskanzler / die deutsche Bundeskanzlerin am häufigsten auf? Am häufigsten ist er / sie …","in Berlin, weil sich dort das Bundeskanzleramt und der Bundestag befinden.","Yes",
 71,"Wo hält sich der deutsche Bundeskanzler / die deutsche Bundeskanzlerin am häufigsten auf? Am häufigsten ist er / sie …","auf Schloss Meseberg, dem Gästehaus der Bundesregierung, um Staatsgäste zu empfangen.","No",
@@ -515,10 +515,10 @@
 129,"Vom Volk gewählt wird in Deutschland …","der Ministerpräsident / die Ministerpräsidentin eines Bundeslandes.","No",
 129,"Vom Volk gewählt wird in Deutschland …","der Bundestag.","Yes",
 129,"Vom Volk gewählt wird in Deutschland …","der Bundespräsident / die Bundespräsidentin.","No",
-130,"Welcher Stimmzettel wäre bei einer Bundestagswahl gültig?","1) je eine Stimme in der linken und rechten Spalte.","Yes",
-130,"Welcher Stimmzettel wäre bei einer Bundestagswahl gültig?","2) zwei Kreuze rechts.","No",
-130,"Welcher Stimmzettel wäre bei einer Bundestagswahl gültig?","3) zwei Kreuze links.","No",
-130,"Welcher Stimmzettel wäre bei einer Bundestagswahl gültig?","4) drei Kreuze links.","No",
+130,"Welcher Stimmzettel wäre bei einer Bundestagswahl gültig?","1) je eine Stimme in der linken und rechten Spalte.","Yes","Yes"
+130,"Welcher Stimmzettel wäre bei einer Bundestagswahl gültig?","2) zwei Kreuze rechts.","No","Yes"
+130,"Welcher Stimmzettel wäre bei einer Bundestagswahl gültig?","3) zwei Kreuze links.","No","Yes"
+130,"Welcher Stimmzettel wäre bei einer Bundestagswahl gültig?","4) drei Kreuze links.","No","Yes"
 131,"In Deutschland ist ein Bürgermeister / eine Bürgermeisterin …","der Leiter / die Leiterin einer Schule.","No",
 131,"In Deutschland ist ein Bürgermeister / eine Bürgermeisterin …","der Chef / die Chefin einer Bank.","No",
 131,"In Deutschland ist ein Bürgermeister / eine Bürgermeisterin …","das Oberhaupt einer Gemeinde.","Yes",
@@ -699,10 +699,10 @@
 175,"Wie viele Besatzungszonen gab es in Deutschland nach dem Zweiten Weltkrieg?",4,"Yes",
 175,"Wie viele Besatzungszonen gab es in Deutschland nach dem Zweiten Weltkrieg?",5,"No",
 175,"Wie viele Besatzungszonen gab es in Deutschland nach dem Zweiten Weltkrieg?",6,"No",
-176,"Wie waren die Besatzungszonen Deutschlands nach 1945 verteilt?","1=Großbritannien, 2=Sowjetunion, 3=Frankreich, 4=USA","No",
-176,"Wie waren die Besatzungszonen Deutschlands nach 1945 verteilt?","1=Sowjetunion, 2=Großbritannien, 3=USA, 4=Frankreich","No",
-176,"Wie waren die Besatzungszonen Deutschlands nach 1945 verteilt?","1=Großbritannien, 2=Sowjetunion, 3=USA, 4=Frankreich","Yes",
-176,"Wie waren die Besatzungszonen Deutschlands nach 1945 verteilt?","1=Großbritannien, 2=USA, 3=Sowjetunion, 4=Frankreich","No",
+176,"Wie waren die Besatzungszonen Deutschlands nach 1945 verteilt?","1=Großbritannien, 2=Sowjetunion, 3=Frankreich, 4=USA","No","Yes"
+176,"Wie waren die Besatzungszonen Deutschlands nach 1945 verteilt?","1=Sowjetunion, 2=Großbritannien, 3=USA, 4=Frankreich","No","Yes"
+176,"Wie waren die Besatzungszonen Deutschlands nach 1945 verteilt?","1=Großbritannien, 2=Sowjetunion, 3=USA, 4=Frankreich","Yes","Yes"
+176,"Wie waren die Besatzungszonen Deutschlands nach 1945 verteilt?","1=Großbritannien, 2=USA, 3=Sowjetunion, 4=Frankreich","No","Yes"
 177,"Welche deutsche Stadt wurde nach dem Zweiten Weltkrieg in vier Sektoren aufgeteilt?","München","No",
 177,"Welche deutsche Stadt wurde nach dem Zweiten Weltkrieg in vier Sektoren aufgeteilt?","Berlin","Yes",
 177,"Welche deutsche Stadt wurde nach dem Zweiten Weltkrieg in vier Sektoren aufgeteilt?","Dresden","No",
@@ -719,10 +719,10 @@
 180,"Der erste Bundeskanzler der Bundesrepublik Deutschland war …","Willy Brandt.","No",
 180,"Der erste Bundeskanzler der Bundesrepublik Deutschland war …","Konrad Adenauer.","Yes",
 180,"Der erste Bundeskanzler der Bundesrepublik Deutschland war …","Gerhard Schröder.","No",
-181,"Was wollte Willy Brandt mit seinem Kniefall 1970 im ehemaligen jüdischen Ghetto in Warschau ausdrücken?","Er hat sich den ehemaligen Alliierten unterworfen.","No",
-181,"Was wollte Willy Brandt mit seinem Kniefall 1970 im ehemaligen jüdischen Ghetto in Warschau ausdrücken?","Er bat Polen und die polnischen Juden um Vergebung.","Yes",
-181,"Was wollte Willy Brandt mit seinem Kniefall 1970 im ehemaligen jüdischen Ghetto in Warschau ausdrücken?","Er zeigte seine Demut vor dem Warschauer Pakt.","No",
-181,"Was wollte Willy Brandt mit seinem Kniefall 1970 im ehemaligen jüdischen Ghetto in Warschau ausdrücken?","Er sprach ein Gebet am Grab des Unbekannten Soldaten.","No",
+181,"Was wollte Willy Brandt mit seinem Kniefall 1970 im ehemaligen jüdischen Ghetto in Warschau ausdrücken?","Er hat sich den ehemaligen Alliierten unterworfen.","No","Yes"
+181,"Was wollte Willy Brandt mit seinem Kniefall 1970 im ehemaligen jüdischen Ghetto in Warschau ausdrücken?","Er bat Polen und die polnischen Juden um Vergebung.","Yes","Yes"
+181,"Was wollte Willy Brandt mit seinem Kniefall 1970 im ehemaligen jüdischen Ghetto in Warschau ausdrücken?","Er zeigte seine Demut vor dem Warschauer Pakt.","No","Yes"
+181,"Was wollte Willy Brandt mit seinem Kniefall 1970 im ehemaligen jüdischen Ghetto in Warschau ausdrücken?","Er sprach ein Gebet am Grab des Unbekannten Soldaten.","No","Yes"
 182,"Wie heißt das jüdische Gebetshaus?","Basilika","No",
 182,"Wie heißt das jüdische Gebetshaus?","Moschee","No",
 182,"Wie heißt das jüdische Gebetshaus?","Synagoge","Yes",
@@ -743,10 +743,10 @@
 186,"Im Jahr 1953 gab es in der DDR einen Aufstand, an den lange Zeit in der Bundesrepublik Deutschland ein Feiertag erinnerte. Wann war das?","17. Juni","Yes",
 186,"Im Jahr 1953 gab es in der DDR einen Aufstand, an den lange Zeit in der Bundesrepublik Deutschland ein Feiertag erinnerte. Wann war das?","20. Juli","No",
 186,"Im Jahr 1953 gab es in der DDR einen Aufstand, an den lange Zeit in der Bundesrepublik Deutschland ein Feiertag erinnerte. Wann war das?","9. November","No",
-187,"Welcher deutsche Staat hatte eine schwarz-rot-goldene Flagge mit Hammer, Zirkel und Ährenkranz?","Preußen","No",
-187,"Welcher deutsche Staat hatte eine schwarz-rot-goldene Flagge mit Hammer, Zirkel und Ährenkranz?","Bundesrepublik Deutschland","No",
-187,"Welcher deutsche Staat hatte eine schwarz-rot-goldene Flagge mit Hammer, Zirkel und Ährenkranz?","DDR","Yes",
-187,"Welcher deutsche Staat hatte eine schwarz-rot-goldene Flagge mit Hammer, Zirkel und Ährenkranz?","„Drittes Reich“","No",
+187,"Welcher deutsche Staat hatte eine schwarz-rot-goldene Flagge mit Hammer, Zirkel und Ährenkranz?","Preußen","No","Yes"
+187,"Welcher deutsche Staat hatte eine schwarz-rot-goldene Flagge mit Hammer, Zirkel und Ährenkranz?","Bundesrepublik Deutschland","No","Yes"
+187,"Welcher deutsche Staat hatte eine schwarz-rot-goldene Flagge mit Hammer, Zirkel und Ährenkranz?","DDR","Yes","Yes"
+187,"Welcher deutsche Staat hatte eine schwarz-rot-goldene Flagge mit Hammer, Zirkel und Ährenkranz?","„Drittes Reich“","No","Yes"
 188,"In welchem Jahr wurde die Mauer in Berlin gebaut?",1953,"No",
 188,"In welchem Jahr wurde die Mauer in Berlin gebaut?",1956,"No",
 188,"In welchem Jahr wurde die Mauer in Berlin gebaut?",1959,"No",
@@ -831,10 +831,10 @@
 208,"Was war die „Stasi“?","eine berühmte deutsche Gedenkstätte","No",
 208,"Was war die „Stasi“?","der Geheimdienst der DDR","Yes",
 208,"Was war die „Stasi“?","ein deutscher Sportverein während des Zweiten Weltkrieges","No",
-209,"Welches war das Wappen der Deutschen Demokratischen Republik?",1,"No",
-209,"Welches war das Wappen der Deutschen Demokratischen Republik?",2,"No",
-209,"Welches war das Wappen der Deutschen Demokratischen Republik?",3,"No",
-209,"Welches war das Wappen der Deutschen Demokratischen Republik?",4,"Yes",
+209,"Welches war das Wappen der Deutschen Demokratischen Republik?",1,"No","Yes"
+209,"Welches war das Wappen der Deutschen Demokratischen Republik?",2,"No","Yes"
+209,"Welches war das Wappen der Deutschen Demokratischen Republik?",3,"No","Yes"
+209,"Welches war das Wappen der Deutschen Demokratischen Republik?",4,"Yes","Yes"
 210,"Was ereignete sich am 17. Juni 1953 in der DDR?","der feierliche Beitritt zum Warschauer Pakt","No",
 210,"Was ereignete sich am 17. Juni 1953 in der DDR?","landesweite Streiks und ein Volksaufstand","Yes",
 210,"Was ereignete sich am 17. Juni 1953 in der DDR?","der 1. SED-Parteitag","No",
@@ -859,10 +859,10 @@
 215,"Wer wird als „Kanzler der Deutschen Einheit“ bezeichnet?","Helmut Kohl","Yes",
 215,"Wer wird als „Kanzler der Deutschen Einheit“ bezeichnet?","Konrad Adenauer","No",
 215,"Wer wird als „Kanzler der Deutschen Einheit“ bezeichnet?","Helmut Schmidt","No",
-216,"Welches Symbol ist im Plenarsaal des Deutschen Bundestages zu sehen?","die Fahne der Stadt Berlin.","No",
-216,"Welches Symbol ist im Plenarsaal des Deutschen Bundestages zu sehen?","der Bundesadler.","Yes",
-216,"Welches Symbol ist im Plenarsaal des Deutschen Bundestages zu sehen?","der Reichsadler.","No",
-216,"Welches Symbol ist im Plenarsaal des Deutschen Bundestages zu sehen?","die Reichskrone.","No",
+216,"Welches Symbol ist im Plenarsaal des Deutschen Bundestages zu sehen?","die Fahne der Stadt Berlin.","No","Yes"
+216,"Welches Symbol ist im Plenarsaal des Deutschen Bundestages zu sehen?","der Bundesadler.","Yes","Yes"
+216,"Welches Symbol ist im Plenarsaal des Deutschen Bundestages zu sehen?","der Reichsadler.","No","Yes"
+216,"Welches Symbol ist im Plenarsaal des Deutschen Bundestages zu sehen?","die Reichskrone.","No","Yes"
 217,"In welchem Zeitraum gab es die Deutsche Demokratische Republik (DDR)?","1919 bis 1927","No",
 217,"In welchem Zeitraum gab es die Deutsche Demokratische Republik (DDR)?","1933 bis 1945","No",
 217,"In welchem Zeitraum gab es die Deutsche Demokratische Republik (DDR)?","1949 bis 1990","Yes",
@@ -899,10 +899,10 @@
 225,"In welchem anderen Land gibt es eine große deutschsprachige Bevölkerung?","Norwegen","No",
 225,"In welchem anderen Land gibt es eine große deutschsprachige Bevölkerung?","Spanien","No",
 225,"In welchem anderen Land gibt es eine große deutschsprachige Bevölkerung?","Österreich","Yes",
-226,"Welche ist die Flagge der Europäischen Union?","gestreift","No",
-226,"Welche ist die Flagge der Europäischen Union?","blau mit kreisförmig angeordneten Sternen","Yes",
-226,"Welche ist die Flagge der Europäischen Union?","heller Hintergrund, Weltkarte, umrandet von Olivenzweigen","No",
-226,"Welche ist die Flagge der Europäischen Union?",4,"No",
+226,"Welche ist die Flagge der Europäischen Union?","gestreift","No","Yes"
+226,"Welche ist die Flagge der Europäischen Union?","blau mit kreisförmig angeordneten Sternen","Yes","Yes"
+226,"Welche ist die Flagge der Europäischen Union?","heller Hintergrund, Weltkarte, umrandet von Olivenzweigen","No","Yes"
+226,"Welche ist die Flagge der Europäischen Union?",4,"No","Yes"
 227,"Welches Land ist ein Nachbarland von Deutschland?","Finnland","No",
 227,"Welches Land ist ein Nachbarland von Deutschland?","Dänemark","Yes",
 227,"Welches Land ist ein Nachbarland von Deutschland?","Norwegen","No",
@@ -935,10 +935,10 @@
 234,"Wo ist der Sitz des Europäischen Parlaments?","Paris","No",
 234,"Wo ist der Sitz des Europäischen Parlaments?","Berlin","No",
 234,"Wo ist der Sitz des Europäischen Parlaments?","Straßburg","Yes",
-235,"Der französische Staatspräsident François Mitterrand und der deutsche Bundeskanzler Helmut Kohl gedenken in Verdun gemeinsam der Toten beider Weltkriege. Welches Ziel der Europäischen Union wird bei diesem Treffen deutlich?","Freundschaft zwischen England und Deutschland","No",
-235,"Der französische Staatspräsident François Mitterrand und der deutsche Bundeskanzler Helmut Kohl gedenken in Verdun gemeinsam der Toten beider Weltkriege. Welches Ziel der Europäischen Union wird bei diesem Treffen deutlich?","Reisefreiheit in alle Länder der EU","No",
-235,"Der französische Staatspräsident François Mitterrand und der deutsche Bundeskanzler Helmut Kohl gedenken in Verdun gemeinsam der Toten beider Weltkriege. Welches Ziel der Europäischen Union wird bei diesem Treffen deutlich?","Frieden und Sicherheit in den Ländern der EU","Yes",
-235,"Der französische Staatspräsident François Mitterrand und der deutsche Bundeskanzler Helmut Kohl gedenken in Verdun gemeinsam der Toten beider Weltkriege. Welches Ziel der Europäischen Union wird bei diesem Treffen deutlich?","einheitliche Feiertage in den Ländern der EU","No",
+235,"Der französische Staatspräsident François Mitterrand und der deutsche Bundeskanzler Helmut Kohl gedenken in Verdun gemeinsam der Toten beider Weltkriege. Welches Ziel der Europäischen Union wird bei diesem Treffen deutlich?","Freundschaft zwischen England und Deutschland","No","Yes"
+235,"Der französische Staatspräsident François Mitterrand und der deutsche Bundeskanzler Helmut Kohl gedenken in Verdun gemeinsam der Toten beider Weltkriege. Welches Ziel der Europäischen Union wird bei diesem Treffen deutlich?","Reisefreiheit in alle Länder der EU","No","Yes"
+235,"Der französische Staatspräsident François Mitterrand und der deutsche Bundeskanzler Helmut Kohl gedenken in Verdun gemeinsam der Toten beider Weltkriege. Welches Ziel der Europäischen Union wird bei diesem Treffen deutlich?","Frieden und Sicherheit in den Ländern der EU","Yes","Yes"
+235,"Der französische Staatspräsident François Mitterrand und der deutsche Bundeskanzler Helmut Kohl gedenken in Verdun gemeinsam der Toten beider Weltkriege. Welches Ziel der Europäischen Union wird bei diesem Treffen deutlich?","einheitliche Feiertage in den Ländern der EU","No","Yes"
 236,"Wie viele Mitgliedstaaten hat die EU heute?",21,"No",
 236,"Wie viele Mitgliedstaaten hat die EU heute?",23,"No",
 236,"Wie viele Mitgliedstaaten hat die EU heute?",25,"No",
@@ -1199,10 +1199,10 @@
 300,"Aus welchem Land kamen die ersten Gastarbeiter / Gastarbeiterinnen in die Bundesrepublik Deutschland?","Spanien","No",
 300,"Aus welchem Land kamen die ersten Gastarbeiter / Gastarbeiterinnen in die Bundesrepublik Deutschland?","Portugal","No",
 300,"Aus welchem Land kamen die ersten Gastarbeiter / Gastarbeiterinnen in die Bundesrepublik Deutschland?","Türkei","No",
-301,"Welches Wappen gehört zum Freistaat Bayern?",2,"Yes",
-301,"Welches Wappen gehört zum Freistaat Bayern?",1,"No",
-301,"Welches Wappen gehört zum Freistaat Bayern?",3,"No",
-301,"Welches Wappen gehört zum Freistaat Bayern?",4,"No",
+301,"Welches Wappen gehört zum Freistaat Bayern?",2,"Yes","Yes"
+301,"Welches Wappen gehört zum Freistaat Bayern?",1,"No","Yes"
+301,"Welches Wappen gehört zum Freistaat Bayern?",3,"No","Yes"
+301,"Welches Wappen gehört zum Freistaat Bayern?",4,"No","Yes"
 302,"Welches ist ein Landkreis in Bayern?","Altötting","Yes",
 302,"Welches ist ein Landkreis in Bayern?","Prignitz","No",
 302,"Welches ist ein Landkreis in Bayern?","Rhein-Sieg-Kreis","No",
