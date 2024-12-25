@@ -3,7 +3,7 @@ import pandas as pd
 import random
 
 # Load dataset
-@st.cache
+@st.cache_data
 def load_data():
     return pd.read_csv('/mnt/data/questions_dataset.csv')
 
