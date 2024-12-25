@@ -38,7 +38,7 @@ for i, question_data in enumerate(st.session_state['quiz_data']):
     st.session_state['responses'][i] = st.radio(
         f"Select an answer for Question {i + 1}:",
         question_data['options'],
-        index=st.session_state['responses'][i] if st.session_state['responses'][i] in question_data['options'] else None,
+        index=question_data['options'].index(st.session_state['responses'][i]) if st.session_state['responses'][i] in question_data['options'] else -1,
         key=f"q{i}"
     )
 
@@ -58,4 +58,5 @@ if st.button("Finish Test"):
             del st.session_state['quiz_data']
             del st.session_state['responses']
             st.experimental_rerun()
+
 
