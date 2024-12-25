@@ -7,9 +7,10 @@ import random
 def load_data():
     data = pd.read_csv('./data/questions_dataset.csv')
     grouped = data.groupby("question_number").apply(lambda df: {
+        "question_number": df.iloc[0]["question_number"],
         "question": df.iloc[0]["question"],
         "options": df["option"].tolist(),
-        "correct_answer": df[df["is_correct"] == "Yes"]["option"].iloc[0]
+        "correct_answer": df[df["is_correct"] == "Yes"]["option"].iloc[0] if not df[df["is_correct"] == "Yes"].empty else None  # Handle empty DataFrame
     }).tolist()
     return grouped
 
