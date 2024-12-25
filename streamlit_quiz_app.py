@@ -5,7 +5,7 @@ import random
 # Load dataset
 @st.cache_data
 def load_data():
-    data = pd.read_csv('/mnt/data/questions_dataset.csv')
+    data = pd.read_csv('./data/questions_dataset.csv')
     grouped = data.groupby("question_number").apply(lambda df: {
         "question_number": df.iloc[0]["question_number"],
         "question": df.iloc[0]["question"],
