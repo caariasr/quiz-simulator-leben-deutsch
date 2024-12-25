@@ -47,7 +47,7 @@ for i, question_data in enumerate(st.session_state['quiz_data']):
                 st.markdown(f"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{option}")
     else:
         st.session_state['responses'][i] = st.radio(
-            f"Select an answer for Question {i + 1}:",
+            f"",
             ["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + opt for opt in question_data['options']],
             index=0,
             key=f"q{i}"
