@@ -10,7 +10,8 @@ def load_data():
         "question_number": df.iloc[0]["question_number"],
         "question": df.iloc[0]["question"],
         "options": df["option"].tolist(),
-        "correct_answer": df[df["is_correct"] == "Yes"]["option"].iloc[0] if not df[df["is_correct"] == "Yes"].empty else None  # Handle empty DataFrame
+        "correct_answer": df[df["is_correct"] == "Yes"]["option"].iloc[0] if not df[df["is_correct"] == "Yes"].empty else None,  # Handle empty DataFrame
+        "has_image": df.iloc[0]["has_image"] == "Yes"  # Check if the question has an image 
     }).tolist()
     return grouped
 
@@ -35,6 +36,11 @@ st.write("This quiz simulates 33 questions from the Einbürgerungstest. Answer t
 
 # Display quiz questions
 for i, question_data in enumerate(st.session_state['quiz_data']):
+    # Display image if the question has one
+    if question_data['has_image']:
+        image_path = os.path.join('./img', f"Q{question_data['question_number']}.png")
+        if os.path.exists(image_path):
+            st.image(image_path, caption=f"Image for Question {question_data['question_number']}", use_column_width=True)
     st.write(f"**Question {i + 1}:** {question_data['question']}")
     if st.session_state['show_results']:
         correct = question_data['correct_answer']
