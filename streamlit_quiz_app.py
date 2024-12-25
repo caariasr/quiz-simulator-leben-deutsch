@@ -41,7 +41,7 @@ for i, question_data in enumerate(st.session_state['quiz_data']):
     if question_data['has_image']:
         image_path = os.path.join('./img', f"Q{question_data['question_number']}.png")
         if os.path.exists(image_path):
-            st.image(image_path, caption=f"Image for Question {question_data['question_number']}", use_column_width=True)
+            st.image(image_path, caption=f"Image for Question {question_data['question_number']}", use_container_width=True)
     st.write(f"**Question {i + 1}:** {question_data['question']}")
     if st.session_state['show_results']:
         correct = question_data['correct_answer']
