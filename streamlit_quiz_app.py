@@ -30,33 +30,48 @@ if 'quiz_data' not in st.session_state:
     st.session_state['responses'] = [None] * 33
 
 # Quiz instructions
-st.write("This quiz simulates 33 questions from the Einbürgerungstest. Answer the questions below and click 'Finish Test' to see your score.")
+st.write("This quiz simulates 33 questions from the Einbürgerungstest. Answer the questions below and click 'Finish Test' to see your score. Refresh page to have a new random set of 33 questions")
 
 # Display quiz questions
 for i, question_data in enumerate(st.session_state['quiz_data']):
     st.write(f"**Question {i + 1}:** {question_data['question']}")
-    st.session_state['responses'][i] = st.radio(
-        f"Select an answer for Question {i + 1}:",
-        question_data['options'],
-        index=0,
-        key=f"q{i}"
-    )
+    if 'show_results' in st.session_state and st.session_state['show_results']:
+        correct = question_data['correct_answer']
+        for option in question_data['options']:
+            if option == correct:
+                st.write(f"✅ **{option}** (Correct)")
+            elif option == st.session_state['responses'][i]:
+                st.write(f"❌ **{option}** (Your Answer)")
+            else:
+                st.write(option)
+    else:
+        st.session_state['responses'][i] = st.radio(
+            f"Select an answer for Question {i + 1}:",
+            question_data['options'],
+            index=-1,
+            key=f"q{i}"
+        )
 
 # Finish button
 if st.button("Finish Test"):
     if None in st.session_state['responses']:
         st.error("Please answer all questions before finishing the test.")
     else:
+        st.session_state['show_results'] = True
         correct_answers = 0
         for i, question_data in enumerate(st.session_state['quiz_data']):
             if st.session_state['responses'][i] == question_data['correct_answer']:
                 correct_answers += 1
         st.write(f"You scored {correct_answers} out of 33.")
 
+        if correct_answers > 16:
+            st.success("Congratulations, you passed!")
+        else:
+            st.error("Unfortunately you didn't pass this simulation, keep practicing")
+
         # Reset quiz state for new simulation
         if st.button("Start a New Quiz"):
             del st.session_state['quiz_data']
             del st.session_state['responses']
+            del st.session_state['show_results']
             st.experimental_rerun()
-
-
