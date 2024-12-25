@@ -38,7 +38,7 @@ for i, question_data in enumerate(st.session_state['quiz_data']):
     st.session_state['responses'][i] = st.radio(
         f"Select an answer for Question {i + 1}:",
         question_data['options'],
-        index=-1,
+        index=0,
         key=f"q{i}"
     )
 
