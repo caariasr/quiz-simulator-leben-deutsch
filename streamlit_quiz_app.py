@@ -49,9 +49,10 @@ for i, question_data in enumerate(st.session_state['quiz_data']):
         with st.container():
             st.markdown("<div style='margin-left: 40px;'>", unsafe_allow_html=True)
             st.session_state['responses'][i] = st.radio(
-                f"",
+                f"Select an answer for Question {i + 1}:",
                 question_data['options'],
                 index=0,
+                label_visibility=False,
                 key=f"q{i}"
             )
             st.markdown("</div>", unsafe_allow_html=True)
