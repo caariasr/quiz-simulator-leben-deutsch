@@ -33,7 +33,7 @@ if 'quiz_data' not in st.session_state:
     st.session_state['show_results'] = False
 
 # Quiz instructions
-st.write("This quiz simulates 33 questions from the Einbürgerungstest. Answer the questions below and click 'Finish Test' to see your score. Refresh page to have a new random set of 33 questions")
+st.write("This quiz simulates 33 questions from the Einbürgerungstest. Answer the questions below and click *'Finish Test'* to see your score. Click on *Show answers* to see the results, and click on *Start a new quiz* to get a new random set of 33 questions.") 
 
 # Display quiz questions
 for i, question_data in enumerate(st.session_state['quiz_data']):
