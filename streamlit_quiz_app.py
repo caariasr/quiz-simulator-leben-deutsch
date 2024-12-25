@@ -46,12 +46,15 @@ for i, question_data in enumerate(st.session_state['quiz_data']):
             else:
                 st.markdown(f"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{option}")
     else:
-        st.session_state['responses'][i] = st.radio(
-            f"",
-            ["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + opt for opt in question_data['options']],
-            index=0,
-            key=f"q{i}"
-        )
+        with st.container():
+            st.markdown("<div style='margin-left: 40px;'>", unsafe_allow_html=True)
+            st.session_state['responses'][i] = st.radio(
+                f"",
+                question_data['options'],
+                index=0,
+                key=f"q{i}"
+            )
+            st.markdown("</div>", unsafe_allow_html=True)
 
 # Finish button
 if st.button("Finish Test"):
