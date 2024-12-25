@@ -5,7 +5,7 @@ import random
 # Load dataset
 @st.cache_data
 def load_data():
-    data = pd.read_csv('./data/questions_dataset.csv')
+    data = pd.read_csv('/mnt/data/questions_dataset.csv')
     grouped = data.groupby("question_number").apply(lambda df: {
         "question_number": df.iloc[0]["question_number"],
         "question": df.iloc[0]["question"],
@@ -38,20 +38,23 @@ for i, question_data in enumerate(st.session_state['quiz_data']):
     st.session_state['responses'][i] = st.radio(
         f"Select an answer for Question {i + 1}:",
         question_data['options'],
-        index=0 if st.session_state['responses'][i] is None else question_data['options'].index(st.session_state['responses'][i]),
+        index=-1 if st.session_state['responses'][i] is None else question_data['options'].index(st.session_state['responses'][i]),
         key=f"q{i}"
     )
 
 # Finish button
 if st.button("Finish Test"):
-    correct_answers = 0
-    for i, question_data in enumerate(st.session_state['quiz_data']):
-        if st.session_state['responses'][i] == question_data['correct_answer']:
-            correct_answers += 1
-    st.write(f"You scored {correct_answers} out of 33.")
+    if None in st.session_state['responses']:
+        st.error("Please answer all questions before finishing the test.")
+    else:
+        correct_answers = 0
+        for i, question_data in enumerate(st.session_state['quiz_data']):
+            if st.session_state['responses'][i] == question_data['correct_answer']:
+                correct_answers += 1
+        st.write(f"You scored {correct_answers} out of 33.")
 
-    # Reset quiz state for new simulation
-    if st.button("Start a New Quiz"):
-        del st.session_state['quiz_data']
-        del st.session_state['responses']
-        st.experimental_rerun()
+        # Reset quiz state for new simulation
+        if st.button("Start a New Quiz"):
+            del st.session_state['quiz_data']
+            del st.session_state['responses']
+            st.experimental_rerun()
