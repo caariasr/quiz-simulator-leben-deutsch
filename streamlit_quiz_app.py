@@ -72,11 +72,11 @@ if st.button("Finish Test"):
 # Show Answers button
 if st.button("Show Answers"):
     st.session_state['show_results'] = True
-    st.experimental_rerun()
+    st.rerun()
 
 # Reset quiz state for new simulation
 if st.session_state['show_results'] and st.button("Start a New Quiz"):
     del st.session_state['quiz_data']
     del st.session_state['responses']
     del st.session_state['show_results']
-    st.experimental_rerun()
+    st.rerun()
