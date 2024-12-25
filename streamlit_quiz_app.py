@@ -5,7 +5,7 @@ import random
 # Load dataset
 @st.cache_data
 def load_data():
-    return pd.read_csv('/mnt/data/questions_dataset.csv')
+    return pd.read_csv('./data/questions_dataset.csv')
 
 # Function to generate a random quiz
 def generate_quiz(data, num_questions=33):
