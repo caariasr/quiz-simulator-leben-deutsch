@@ -5,11 +5,17 @@ import random
 # Load dataset
 @st.cache_data
 def load_data():
-    return pd.read_csv('./data/questions_dataset.csv')
+    data = pd.read_csv('./data/questions_dataset.csv')
+    grouped = data.groupby("question_number").apply(lambda df: {
+        "question": df.iloc[0]["question"],
+        "options": df["option"].tolist(),
+        "correct_answer": df[df["is_correct"] == "Yes"]["option"].iloc[0]
+    }).tolist()
+    return grouped
 
 # Function to generate a random quiz
 def generate_quiz(data, num_questions=33):
-    return data.sample(n=num_questions, replace=False).reset_index(drop=True)
+    return random.sample(data, num_questions)
 
 # Streamlit app
 st.title("Einbürgerungstest Quiz Simulator")
@@ -26,16 +32,20 @@ if 'quiz_data' not in st.session_state:
 st.write("This quiz simulates 33 questions from the Einbürgerungstest. Answer the questions below and click 'Finish Test' to see your score.")
 
 # Display quiz questions
-for i, row in st.session_state['quiz_data'].iterrows():
-    st.write(f"**Question {i + 1}:** {row['question']}")
-    options = [row[f"option_{j}"] for j in range(1, 5) if pd.notna(row[f"option_{j}"])]
-    st.session_state['responses'][i] = st.radio(f"Select an answer for Question {i + 1}:", options, index=0 if st.session_state['responses'][i] is None else options.index(st.session_state['responses'][i]), key=f"q{i}")
+for i, question_data in enumerate(st.session_state['quiz_data']):
+    st.write(f"**Question {i + 1}:** {question_data['question']}")
+    st.session_state['responses'][i] = st.radio(
+        f"Select an answer for Question {i + 1}:",
+        question_data['options'],
+        index=0 if st.session_state['responses'][i] is None else question_data['options'].index(st.session_state['responses'][i]),
+        key=f"q{i}"
+    )
 
 # Finish button
 if st.button("Finish Test"):
     correct_answers = 0
-    for i, row in st.session_state['quiz_data'].iterrows():
-        if st.session_state['responses'][i] == row['correct_answer']:
+    for i, question_data in enumerate(st.session_state['quiz_data']):
+        if st.session_state['responses'][i] == question_data['correct_answer']:
             correct_answers += 1
     st.write(f"You scored {correct_answers} out of 33.")
 
