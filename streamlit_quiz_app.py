@@ -40,15 +40,17 @@ for i, question_data in enumerate(st.session_state['quiz_data']):
         correct = question_data['correct_answer']
         for option in question_data['options']:
             if option == correct:
-                st.markdown(f"&nbsp;&nbsp;&nbsp;&nbsp;✅ **{option}** (Correct)")
+                st.markdown(f"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ **{option}** (Correct)")
             elif option == st.session_state['responses'][i]:
-                st.markdown(f"&nbsp;&nbsp;&nbsp;&nbsp;❌ **{option}** (Your Answer)")
+                st.markdown(f"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❌ **{option}** (Your Answer)")
             else:
-                st.markdown(f"&nbsp;&nbsp;&nbsp;&nbsp;{option}")
+                st.markdown(f"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{option}")
     else:
+        for option in question_data['options']:
+            st.markdown(f"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- {option}")
         st.session_state['responses'][i] = st.radio(
             f"Select an answer for Question {i + 1}:",
-            [f"   {opt}" for opt in question_data['options']],
+            question_data['options'],
             index=0,
             key=f"q{i}"
         )
