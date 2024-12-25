@@ -1,4 +1,4 @@
-"Question Number","Question","Option","is_correct","image_link"
+"question_number","question","option","is_correct","image_link"
 1,"In Deutschland dürfen Menschen offen etwas gegen die Regierung sagen, weil …","hier Religionsfreiheit gilt.","No",
 1,"In Deutschland dürfen Menschen offen etwas gegen die Regierung sagen, weil …","die Menschen Steuern zahlen.","No",
 1,"In Deutschland dürfen Menschen offen etwas gegen die Regierung sagen, weil …","die Menschen das Wahlrecht haben.","No",
@@ -463,10 +463,10 @@
 116,"Wenn Sie bei einer Bundestagswahl in Deutschland wählen dürfen, heißt das …","aktives Wahlverfahren.","No",
 116,"Wenn Sie bei einer Bundestagswahl in Deutschland wählen dürfen, heißt das …","aktiver Wahlkampf.","No",
 116,"Wenn Sie bei einer Bundestagswahl in Deutschland wählen dürfen, heißt das …","aktives Wahlrecht.","Yes",
-117,"Wie viel Prozent der Zweitstimmen müssen Parteien mindestens bekommen, um in den Deutschen Bundestag gewählt zu werden?",3.00%,"No",
-117,"Wie viel Prozent der Zweitstimmen müssen Parteien mindestens bekommen, um in den Deutschen Bundestag gewählt zu werden?",4.00%,"No",
-117,"Wie viel Prozent der Zweitstimmen müssen Parteien mindestens bekommen, um in den Deutschen Bundestag gewählt zu werden?",5.00%,"Yes",
-117,"Wie viel Prozent der Zweitstimmen müssen Parteien mindestens bekommen, um in den Deutschen Bundestag gewählt zu werden?",6.00%,"No",
+117,"Wie viel Prozent der Zweitstimmen müssen Parteien mindestens bekommen, um in den Deutschen Bundestag gewählt zu werden?","3.00%","No",
+117,"Wie viel Prozent der Zweitstimmen müssen Parteien mindestens bekommen, um in den Deutschen Bundestag gewählt zu werden?","4.00%","No",
+117,"Wie viel Prozent der Zweitstimmen müssen Parteien mindestens bekommen, um in den Deutschen Bundestag gewählt zu werden?","5.00%","Yes",
+117,"Wie viel Prozent der Zweitstimmen müssen Parteien mindestens bekommen, um in den Deutschen Bundestag gewählt zu werden?","6.00%","No",
 118,"Wer darf bei den rund 40 jüdischen Makkabi-Sportvereinen Mitglied werden?","nur Deutsche","No",
 118,"Wer darf bei den rund 40 jüdischen Makkabi-Sportvereinen Mitglied werden?","nur Israelis","No",
 118,"Wer darf bei den rund 40 jüdischen Makkabi-Sportvereinen Mitglied werden?","nur religiöse Menschen","No",
