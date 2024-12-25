@@ -52,5 +52,6 @@ if st.button("Finish Test"):
 
     # Reset quiz state for new simulation
     if st.button("Start a New Quiz"):
-        st.session_state['quiz_data'] = generate_quiz(data)
-        st.session_state['responses'] = [None] * 33
+        del st.session_state['quiz_data']
+        del st.session_state['responses']
+        st.experimental_rerun()
